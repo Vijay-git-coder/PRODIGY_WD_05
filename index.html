@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather • PRODIGY_WD_05</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Weather app: geolocation or city search. Task-05 Prodigy Infotech.">
+</head>
+<body>
+  <!-- Blue Gradient Squares / Circles (decor) -->
+  <div class="bg-square one" aria-hidden="true"></div>
+  <div class="bg-square two" aria-hidden="true"></div>
+  <div class="bg-circle one" aria-hidden="true"></div>
+  <div class="bg-circle two" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <h1>Weather Now</h1>
+      <p class="sub">Get current weather by your location or any city.</p>
+      <div class="quote"><em>“Comillas Negras”</em> to highlight key info with a bold, minimal style.</div>
+    </header>
+
+    <section class="controls">
+      <button id="useLocation" class="btn primary">Use My Location</button>
+      <div class="search">
+        <input id="cityInput" type="text" placeholder="Type a city e.g., Mumbai" />
+        <button id="searchBtn" class="btn">Search</button>
+      </div>
+    </section>
+
+    <section id="card" class="card hidden" aria-live="polite">
+      <div class="city-line">
+        <h2 id="cityName">—</h2>
+        <span id="country" class="muted">—</span>
+        <span id="updated" class="muted">—</span>
+      </div>
+
+      <div class="grid">
+        <div class="big">
+          <div id="temp" class="temp">—°C</div>
+          <div id="desc" class="desc">—</div>
+        </div>
+        <div class="facts">
+          <div><strong>Feels like:</strong> <span id="feels">—°C</span></div>
+          <div><strong>Humidity:</strong> <span id="humidity">—%</span></div>
+          <div><strong>Wind:</strong> <span id="wind">— m/s</span></div>
+          <div><strong>Pressure:</strong> <span id="pressure">— hPa</span></div>
+        </div>
+      </div>
+    </section>
+
+    <p id="note" class="note">Tip: enable location permission, or type a city.</p>
+  </main>
+
+  <footer class="foot">© <span id="year"></span> Prodigy Infotech • Task-05</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
